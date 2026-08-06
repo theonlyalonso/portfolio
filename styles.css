@@ -365,11 +365,30 @@ textarea {
     text-transform: uppercase;
 }
 
-.highlight-list p {
+.highlight-points {
     margin: 0;
-    max-width: 440px;
-    line-height: 1.5;
+    padding: 0;
+    max-width: 520px;
+    list-style: none;
+    display: grid;
+    gap: 12px;
     color: rgba(255,255,255,.72);
+}
+
+.highlight-points li {
+    position: relative;
+    padding-left: 22px;
+    line-height: 1.45;
+    color: inherit;
+}
+
+.highlight-points li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    color: inherit;
+    font-size: 0.7em;
 }
 
 .work {
